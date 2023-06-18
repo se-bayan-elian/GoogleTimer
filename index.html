@@ -8,13 +8,64 @@
   <!-- add favicon   -->
   <link rel="shortcut icon" href="https://icon-library.com/images/timer-icon-transparent/timer-icon-transparent-21.jpg"
     type="image/x-icon">
+  <!-- link with font awesome -->
+  <link rel="stylesheet" href="all.min.css">
   <!-- link with css  -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- start timer section  -->
+  <section class="timer-sec">
+    <header class="timer-header">
+      <button class="timer-tab">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNnB4IiBoZWlnaHQ9IjM2cHgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTIgNXYxMGw5IDktOSA5djEwaDI0VjMzbC05LTkgOS05VjVIMTJ6bTIwIDI5djVIMTZ2LTVsOC04IDggOHptLTgtMTJsLTgtOFY5aDE2djVsLTggOHoiLz4KICAgIDxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoNDh2NDhIMFYweiIvPgo8L3N2Zz4K" alt="">
+        <span>TIMER</span>
+      </button>
+      <button class="stopwatch-tab">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNnB4IiBoZWlnaHQ9IjM2cHgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDQ4djQ4SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMzAgMkgxOHY0aDEyVjJ6bS04IDI2aDRWMTZoLTR2MTJ6bTE2LjA1LTEzLjIzbDIuODUtMi44NWMtLjg2LTEuMDMtMS44LTEuOTctMi44My0yLjgzbC0yLjg1IDIuODVDMzIuMTUgOS40OCAyOC4yNCA4IDIzLjk5IDggMTQuMDQgOCA2IDE2LjA2IDYgMjZzOC4wNCAxOCAxNy45OSAxOFM0MiAzNS45NCA0MiAyNmMwLTQuMjUtMS40OC04LjE1LTMuOTUtMTEuMjN6TTI0IDQwYy03LjczIDAtMTQtNi4yNy0xNC0xNHM2LjI3LTE0IDE0LTE0IDE0IDYuMjcgMTQgMTQtNi4yNyAxNC0xNCAxNHoiLz4KPC9zdmc+Cg==" alt="">       
+        <span>STOPWATCH</span>
+      </button>
+    </header>
+    <div class="timer-body">
+      <div class="input-configure">
+        <div class="hrs">
+          <span class="hrs-2"></span>
+          <span class="hrs-1"></span>
+          <span class="hrs-symbol">h</span>
+        </div>
+        <div class="mins">
+          <span class="mins-2"></span>
+          <span class="mins-1"></span>
+          <span class="mins-symbol">m</span>
+        </div>
+        <div class="secs">
+          <span class="secs-2">0</span>
+          <span class="secs-1">0</span>
+          <span class="secs-symbol">s</span>
+        </div>
+      </div>
+    </div>
+    <div class="timer-controls">
+      <div class="container">
+        <div class="btns-control">
+          <button class="start-btn">start</button>
+          <button class="reset-btn">reset</button>
+        </div>
+        <div class="other-controls">
+          <button>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAGFBMVEVMaXEAAAAAAAAAAAAAAAAAAAAAAAAAAACrC2ehAAAACHRSTlMA2IAX/16rO6dkyYQAAACdSURBVHgB3ZI1EgJhGEMfXuI1egDsAEhYWjgD26P3xz3M/P2+NvNpQiKp9PiP6uCkQVrjdGGlSc8LBHRV9QIBBU28QABHNa1A3EoWViAA4sgKxBIYqfdbIKIe5NX8LRAqQUElXugOmgK1GS6oB/ECXFhCdw4uNMNCuJUP93XDB9pL7Ilbf6K93YzKaRaw1sIQhePjgQtH1ENt1EkcZynLNG+pHaRaAAAAAElFTkSuQmCC" alt="scound" title="sound">
+          </button>
+          <button>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAK0lEQVR4AWNAgFEwCv6jQnxyQ9MgAoBog0YNGoJgFNAxHY0aNBKK2lEwCgCCjZtl7xalSwAAAABJRU5ErkJggg==" alt="full screen" title="full screen">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end timer section  -->
 
-
+  <script src="all.min.js"></script>
   <script src="index.js"></script>
 </body>
 
