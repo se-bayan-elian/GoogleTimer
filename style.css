@@ -33,7 +33,7 @@ input[type=number] {
   background-color:rgb(32,33,36) ;
   border: 1px solid rgba( 128,134,139, 0.7);
   border-radius: 7px;
-  margin: 250px auto;
+  margin: 150px auto;
   
 }
 .timer-sec header{
@@ -86,7 +86,7 @@ input[type=number] {
   padding: 10px;
   font-size: 30px;
   text-align: center;
-  color: #80868b;
+  color: #fff;
   transition: 0.5s;
 }
 .timer-sec .timer-body .input-configure div span{
@@ -142,4 +142,9 @@ input[type=number] {
   width: 25px;
   height: 25px;
   margin-left: 20px;
+}
+@media (max-width : 700px ){
+  .timer-sec{
+    width: 95%;
+  }
 }
