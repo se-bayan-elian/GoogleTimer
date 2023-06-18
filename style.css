@@ -5,3 +5,141 @@
   box-sizing: border-box;
   outline: 0;
 }
+button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+body{
+  background-color:rgb(32,33,36) ;
+  color : white
+
+}
+/* remove arrows from input number  */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.timer-sec{
+  width: 45%;
+  background-color:rgb(32,33,36) ;
+  border: 1px solid rgba( 128,134,139, 0.7);
+  border-radius: 7px;
+  margin: 250px auto;
+  
+}
+.timer-sec header{
+  display: flex;
+  border-bottom: 1px solid rgba( 128,134,139, 0.7) ;
+}
+.timer-sec header button {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #80868b;
+  padding: 15px 0px;
+  gap:7px;
+  height: 100%;
+  
+}
+
+.timer-sec header button svg {
+  font-size: 13px;
+  margin-top:-2px;
+}
+
+.timer-sec header button.active  {
+  color: #8ab4f8;
+  border-bottom:  2px solid #8ab4f8;
+}
+
+.timer-sec .timer-body{
+  height: 170px;
+  border-bottom: 1px solid rgba( 128,134,139, 0.7) ;
+  padding: 10% 1rem;
+}
+.timer-sec .timer-body .input-configure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.timer-sec .timer-body .input-configure div {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.timer-sec .timer-body .input-configure div input{
+  background-color: transparent;
+  border: 0;
+  border-bottom:1px solid  #80868b;
+  width: 60px;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #80868b;
+  transition: 0.5s;
+}
+.timer-sec .timer-body .input-configure div span{
+  color: #80868b;
+}
+.timer-sec .input-configure div input:focus{
+  border-bottom: 1px solid #8ab4f8;
+
+}
+
+.timer-sec .timer-controls .container{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.timer-sec .timer-controls .container .btns-control button{
+  margin-right: 15px;
+  font-size: 11px;
+  padding: 7px 15px;
+  transition: 0.5s;
+}
+.timer-sec .timer-controls .container .btns-control button.start-btn{
+  background-color: #8ab4f8;
+  border: 1px solid #8ab4f8;
+
+}
+.timer-sec .timer-controls .container .btns-control button.start-btn:hover{
+  background-color: #1B66C9;
+  border: 1px solid #1B66C9;
+}
+.timer-sec .timer-controls .container .btns-control button.reset-btn{
+  background-color: #bdc1c6;
+  border: 1px solid #bdc1c6;
+
+}
+.timer-sec .timer-controls .container .btns-control button.reset-btn:hover{
+  background-color: #a0a3a7;
+  border: 1px solid #a0a3a7;
+
+}
+.timer-sec .timer-controls .container .btns-control button.disabled{
+  background-color: black;
+  color: #80868b;
+}
+
+
+.timer-sec .timer-controls .container  .other-controls button img{
+  filter: invert(1);
+  opacity: 0.2;
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
