@@ -16,21 +16,22 @@
 
 <body>
   <!-- start timer section  -->
-  <section class="timer-sec">
+  <section class="timer-sec ">
     <header class="timer-header">
-      <button class="timer-tab active">
+      <button class="timer-tab active tab">
         <i class="fa-solid fa-hourglass"></i>
         <span>TIMER</span>
       </button>
-      <button class="stopwatch-tab">
+      <button class="stopwatch-tab tab" >
         <i class="fa-solid fa-stopwatch"></i>
         <span>STOPWATCH</span>
       </button>
     </header>
-    <div class="timer-body">
+
+    <div class="timer-body ">
       <div class="input-configure">
         <div class="hrs">
-          <input type="number" name="hrs-input" id="hrs-input" value="00" max="2">
+          <input type="number" name="hrs-input" id="hrs-input" placeholder="00" max="2">
           <span class="hrs-symbol">h</span>
         </div>
         <div class="mins">
@@ -44,6 +45,7 @@
         
       </div>
     </div>
+    
     <div class="timer-controls">
       <div class="container">
         <div class="btns-control">
@@ -67,6 +69,8 @@
   </section>
   <!-- end timer section  -->
 
+  <audio src="mixkit-clear-announce-tones-2861.wav"  id="timerFinishAudio" ></audio>
+  
   <script src="all.min.js"></script>
   <script src="index.js"></script>
 </body>
